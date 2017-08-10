@@ -2,18 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.littleeven.xunfei_voice">
 
-    <!--允许程序联网和发送统计数据的权限-->
+    <!-- 允许程序联网和发送统计数据的权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <!--允许应用以只读的方式访问手机设备的信息，通过获取的信息来唯一标识用户-->
+    <!-- 允许应用以只读的方式访问手机设备的信息，通过获取的信息来唯一标识用户 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <!--获取设备的 MAC 地址，同样用来标识唯一用户-->
+    <!-- 获取设备的 MAC 地址，同样用来标识唯一用户 -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <!--获取设备的上传数据时的位置信息，提高统计精准度-->
+    <!-- 获取设备的上传数据时的位置信息，提高统计精准度 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <!--允许应用检测网络连接状态-->
+    <!-- 允许应用检测网络连接状态 -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <!--用来唯一标识应用-->
+    <!-- 用来唯一标识应用 -->
     <meta-data
         android:name="IFLYTEK_APPKEY"
         android:value="598ac20d" />
@@ -32,6 +32,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".GrammarActivity" />
+        <activity android:name=".VoiceActivity" />
+        <activity android:name=".SpeechActivity" />
+        <activity android:name=".SemanticsActivity"></activity>
     </application>
 
 </manifest>
